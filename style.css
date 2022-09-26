@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mobile-container {
+    background-color: white;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 400px;
+}
+
+header {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+header input {
+    font-family: inherit;
+    background-color: #efefef;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    color: #aaa;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.fav-container {
+    text-align: center;
+    padding: 0.25rem 1rem;
+    background-color: rgb(215, 198, 230);
+}
+
+.fav-meals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.fav-meals li {
+    width: 80px;
+    margin: 5px;
+}
+
+.fav-meals li img {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px 2px #3333331a;
+    height: 70px;
+    width: 70px;
+}
+
+.fav-meals li span {
+    font-size: 0.9rem;
+}
+
+.meal {
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    margin: 1.5rem;
+}
+
+.meal-header {
+
+}
+
+.meal-header .random {
+    position: absolute;
+    top: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.meal-header img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.meal-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.meal-body h3 {
+    margin: 0;
+}
+
+.meal-body .fav-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: rgb(126, 116, 116);
+}
+
+.meal-body .fav-btn.active {
+    color: rebeccapurple;
+}
